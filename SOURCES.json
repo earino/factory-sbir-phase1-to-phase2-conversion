@@ -1,0 +1,23 @@
+{
+  "publisher-terms.snapshot": {
+    "url": "https://www.sbir.gov/data-resources",
+    "bytes": 34609,
+    "sha256": "901620072fb92f35cfc333f32abbf009d6dd205a7e9d67c2ec08d716b642cc4c",
+    "retrieved_at_unix": 1794630146.475522,
+    "transport_attempts": 1
+  },
+  "publisher-documentation.snapshot": {
+    "url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+    "bytes": 45470,
+    "sha256": "423edb2ca7bdbdb83c6593bccc12d202d1edc6ef8f11c69ede3326fbcbc9e4ee",
+    "retrieved_at_unix": 1794630147.287864,
+    "transport_attempts": 1
+  },
+  "sbir_awards_no_abstract.csv": {
+    "url": "https://data.www.sbir.gov/mod_awarddatapublic_no_abstract/award_data_no_abstract.csv",
+    "bytes": 91646156,
+    "sha256": "c141711fb93353e422bb01cd1fb461a126632e84bdf85b33e1f9fe6b3f3a1086",
+    "retrieved_at_unix": 1794630149.69142,
+    "transport_attempts": 1
+  }
+}

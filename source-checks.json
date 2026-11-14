@@ -1,0 +1,276 @@
+{
+  "checks": [
+    {
+      "check": "source file present",
+      "observed": {
+        "name": "sbir_awards_no_abstract.csv",
+        "bytes": 91646156,
+        "source_member": "sbir_awards_no_abstract.csv"
+      },
+      "expected": "fetch returns a nonempty local file for the published CSV member",
+      "passed": true
+    },
+    {
+      "check": "required source fields resolved",
+      "observed": {
+        "source_member": "sbir_awards_no_abstract.csv",
+        "observed_headers": [
+          "Company",
+          "Award Title",
+          "Agency",
+          "Branch",
+          "Phase",
+          "Program",
+          "Agency Tracking Number",
+          "Contract",
+          "Proposal Award Date",
+          "Contract End Date",
+          "Solicitation Number",
+          "Solicitation Year",
+          "Solicitation Close Date",
+          "Proposal Receipt Date",
+          "Date of Notification",
+          "Topic Code",
+          "Award Year",
+          "Award Amount",
+          "UEI",
+          "Duns",
+          "HUBZone Owned",
+          "Socially and Economically Disadvantaged",
+          "Woman Owned",
+          "Number Employees",
+          "Company Website",
+          "Address1",
+          "Address2",
+          "City",
+          "State",
+          "Zip",
+          "Contact Name",
+          "Contact Title",
+          "Contact Phone",
+          "Contact Email",
+          "PI Name",
+          "PI Title",
+          "PI Phone",
+          "PI Email",
+          "RI Name",
+          "RI POC Name",
+          "RI POC Phone"
+        ],
+        "resolved_names": [
+          "agency",
+          "award_amount",
+          "award_year",
+          "branch",
+          "company",
+          "duns",
+          "hubzone_owned",
+          "number_employees",
+          "phase",
+          "program",
+          "proposal_award_date",
+          "socially_economically_disadvantaged",
+          "state",
+          "topic_code",
+          "uei",
+          "women_owned"
+        ]
+      },
+      "expected": "every declared feature plus phase, firm identifier and agency maps to a published column",
+      "passed": true
+    },
+    {
+      "check": "firm identifier resolution coverage",
+      "observed": {
+        "rows_without_firm_key": 0,
+        "keyed_rows_by_kind": {
+          "uei": 153091,
+          "duns": 30549,
+          "name": 36140
+        }
+      },
+      "expected": "firm identity resolves through UEI, else DUNS, else normalized company name with a state",
+      "passed": true
+    },
+    {
+      "check": "state vocabulary in the published file",
+      "observed": {
+        "source_member": "sbir_awards_no_abstract.csv",
+        "distinct_state_values": 56,
+        "blank": 2,
+        "two_letter_code": 0,
+        "full_state_name": 219778,
+        "other_location_text": {},
+        "other_location_total": 0,
+        "non_text_values": {}
+      },
+      "expected": "the published state column holds two-letter USPS codes or full state and territory names; full names are canonicalized to codes and non-US location text is preserved verbatim",
+      "passed": true
+    },
+    {
+      "check": "program values for included rows",
+      "observed": {
+        "counts": {
+          "STTR": 1669,
+          "SBIR": 8017
+        }
+      },
+      "expected": "program is SBIR or STTR on every included Phase I index record",
+      "passed": true
+    },
+    {
+      "check": "state values for included rows",
+      "observed": {
+        "missing": 0,
+        "usps_code_rows": 9686,
+        "non_usps_two_letter_text": {},
+        "non_us_location_text": {},
+        "malformed_values": {}
+      },
+      "expected": "state is a canonical USPS state or territory code, blank, or preserved non-US location text; full names were converted to codes and nothing is imputed",
+      "passed": true
+    },
+    {
+      "check": "yes no unavailable values for included rows",
+      "observed": {
+        "hubzone_owned": {
+          "N": 9220,
+          "Y": 392,
+          "U": 74
+        },
+        "women_owned": {
+          "N": 8385,
+          "Y": 1248,
+          "U": 53
+        },
+        "socially_economically_disadvantaged": {
+          "N": 8839,
+          "Y": 776,
+          "U": 71
+        }
+      },
+      "expected": "each coded ownership field is Y, N, U, or blank, with unrecognized text never converted to Y or N",
+      "passed": true
+    },
+    {
+      "check": "number_employees units and range for included rows",
+      "observed": {
+        "nonnull": 8870,
+        "missing": 816,
+        "min": 0.0,
+        "max": 9999.0,
+        "negative": 0,
+        "non_integer": 0,
+        "above_sbir_500_employee_limit": 6
+      },
+      "expected": "whole nonnegative employee count in persons as published; blank stays blank and is never zero; the SBIR eligibility ceiling is 500 employees and values above it are reported as source evidence, not clipped",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "award_amount units for included rows",
+      "observed": {
+        "nonnull": 9681,
+        "missing": 5,
+        "min": 4102.0,
+        "max": 3418440.0,
+        "negative": 0
+      },
+      "expected": "nonnegative US dollars as published for the Phase I award only; blank stays blank and is never zero",
+      "passed": true,
+      "kind": "unit"
+    },
+    {
+      "check": "target is binary and complete",
+      "observed": {
+        "0": 5390,
+        "1": 4296
+      },
+      "expected": "target values are 0 and 1 with no missing row",
+      "passed": true
+    },
+    {
+      "check": "stable identifiers are unique",
+      "observed": {
+        "rows": 9686,
+        "unique_ids": 9686
+      },
+      "expected": "one unique record_id per firm",
+      "passed": true
+    },
+    {
+      "check": "award_date within award fiscal year",
+      "observed": {
+        "bad_rows": 0,
+        "rows": 9686
+      },
+      "expected": "every shipped award_date lies in the half-open federal fiscal year of its award_year",
+      "passed": true
+    },
+    {
+      "check": "fixed chronological split ranges",
+      "observed": {
+        "train": {
+          "rows": 6574,
+          "min_date": "2004-11-04T00:00:00.000",
+          "max_date": "2014-09-30T00:00:00.000",
+          "positives": 2920
+        },
+        "eval": {
+          "rows": 1408,
+          "min_date": "2014-10-01T00:00:00.000",
+          "max_date": "2016-09-30T00:00:00.000",
+          "positives": 622
+        },
+        "holdout": {
+          "rows": 1704,
+          "min_date": "2016-10-18T00:00:00.000",
+          "max_date": "2018-09-30T00:00:00.000",
+          "positives": 754
+        }
+      },
+      "expected": "train FY2005-2014, eval FY2015-2016, holdout FY2017-2018, all nonempty and inside half-open federal fiscal windows",
+      "passed": true
+    },
+    {
+      "check": "positive events in every split",
+      "observed": {
+        "train": 2920,
+        "eval": 622,
+        "holdout": 754
+      },
+      "expected": "at least one positive in train, eval and holdout",
+      "passed": true
+    },
+    {
+      "check": "label matches later Phase II records",
+      "observed": {
+        "positive_without_match": 0,
+        "negative_with_match": 0,
+        "positives": 4296,
+        "negatives": 5390
+      },
+      "expected": "positive only when the same firm key and agency has a Phase II record in award_year plus one through plus four",
+      "passed": true
+    },
+    {
+      "check": "unknown phase never becomes a negative label",
+      "observed": {
+        "unknown_phase_records": 3303,
+        "missing_phase_records": 0,
+        "negative_rows_with_unknown_phase_in_window": 0,
+        "excluded_unknown_phase_in_window": 98
+      },
+      "expected": "no included negative row has an unknown or missing phase record inside its label window",
+      "passed": true
+    },
+    {
+      "check": "split identifier disjointness",
+      "observed": {
+        "overlap": 0
+      },
+      "expected": "no record_id appears in more than one split",
+      "passed": true
+    }
+  ]
+}

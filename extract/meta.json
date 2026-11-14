@@ -1,0 +1,50 @@
+{
+  "name": "sbir-phase1-to-phase2-conversion",
+  "description": "Will a firm's first-ever SBIR/STTR Phase I award convert into a Phase II award from the same agency within four fiscal years?",
+  "target": "phase2_conversion",
+  "positive_label": 1,
+  "id_columns": [
+    "record_id"
+  ],
+  "columns": [
+    "record_id",
+    "award_date",
+    "agency",
+    "branch",
+    "program",
+    "award_year",
+    "award_amount",
+    "topic_code",
+    "state",
+    "number_employees",
+    "hubzone_owned",
+    "women_owned",
+    "socially_economically_disadvantaged",
+    "phase2_conversion"
+  ],
+  "rows": {
+    "train": 6574,
+    "eval": 1408,
+    "holdout": 1704
+  },
+  "positive_rate": {
+    "train": 0.4441740188621844,
+    "eval": 0.44176136363636365,
+    "holdout": 0.4424882629107981
+  },
+  "split": {
+    "eval": {
+      "end": "2016-10-01T00:00:00.000",
+      "start": "2014-10-01T00:00:00.000"
+    },
+    "holdout": {
+      "end": "2018-10-01T00:00:00.000",
+      "start": "2016-10-01T00:00:00.000"
+    },
+    "train": {
+      "end": "2014-10-01T00:00:00.000",
+      "start": "2004-10-01T00:00:00.000"
+    }
+  },
+  "split_description": "Chronological on Phase I award_year, fixed before any measurement: train 2005-2014, eval 2015-2016, holdout 2017-2018. No embargo is applied, because every feature is read from the Phase I record at its own award year and no label value is ever an input; the only timing rule is that each row's four-year window (ending at most 2022 for the 2018 cohort) must be closed inside the frozen file."
+}

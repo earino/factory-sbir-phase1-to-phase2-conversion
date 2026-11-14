@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "terms_url": "https://www.sbir.gov/data-resources",
+  "terms_sha256": "901620072fb92f35cfc333f32abbf009d6dd205a7e9d67c2ec08d716b642cc4c",
+  "documentation_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+  "documentation_sha256": "423edb2ca7bdbdb83c6593bccc12d202d1edc6ef8f11c69ede3326fbcbc9e4ee",
+  "quoted_excerpt": "Every SBIR/STTR award since the program\u2019s inception is available for download.",
+  "excerpt_found": true,
+  "excerpt_match": "contiguous",
+  "scope": "Captured publisher bytes and quote presence; semantic applicability reviewed separately"
+}

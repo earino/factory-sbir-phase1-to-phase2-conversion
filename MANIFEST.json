@@ -1,0 +1,392 @@
+{
+  "schema": "factory-1",
+  "dataset": "sbir-phase1-to-phase2-conversion",
+  "version": "v-0d2e623e604ecf78",
+  "artifact_version": "a1f22706a52ba521dcb070d0a85877c552f5c62e8752af292e4a31ec27fdbe72",
+  "assets": {
+    "LICENSE-EVIDENCE.json": {
+      "sha256": "e57f4efc58458c984d794a4382de7399edbb91a0d4fd42ee1b789c6904c08735",
+      "bytes": 602,
+      "asset_name": "LICENSE-EVIDENCE.json"
+    },
+    "LICENSE.md": {
+      "sha256": "212c7304c98d73d099e5b1933adc493affe06a08c15ec99f43edbcc0df4f92c9",
+      "bytes": 1099,
+      "asset_name": "LICENSE.md"
+    },
+    "README.md": {
+      "sha256": "fb9b18c3eff990b0b3e1c3ce151748c8dd1044f4cf4b8ffb2454c91f80f1e271",
+      "bytes": 5561,
+      "asset_name": "README.md"
+    },
+    "SOURCES.json": {
+      "sha256": "7895d3fa40b049fb81845ccf936f7ac7ba0f870cc862dacf4346da88ee6c9793",
+      "bytes": 870,
+      "asset_name": "SOURCES.json"
+    },
+    "evaluation.json": {
+      "sha256": "68fa1b2f504a1ba91ffc34624a056e50e5d089972c13928d01ab9f6e8bbd8709",
+      "bytes": 2281,
+      "asset_name": "evaluation.json"
+    },
+    "extract/meta.json": {
+      "sha256": "d7758a8a144e87260b4a0a9a2866cd103473ac2dacec5b356d3da620c6e1d1ec",
+      "bytes": 1534,
+      "asset_name": "extract__meta.json"
+    },
+    "extract/private/holdout.csv": {
+      "sha256": "2e1afa14e7782cc9f0aa2ae4ba38fce95204dd72fc80dcc517970764ec40c148",
+      "bytes": 234676,
+      "asset_name": "extract__private__holdout.csv"
+    },
+    "extract/public/eval.csv": {
+      "sha256": "006ae31a2ee497b03eba519dd9e5322051397db7e56fbcd99cf66033657a26d7",
+      "bytes": 190917,
+      "asset_name": "extract__public__eval.csv"
+    },
+    "extract/public/train.csv": {
+      "sha256": "0f4d0a02478caf671f78888ad423b1b30f8e9e8bb72963d785acdc57dd3f0d49",
+      "bytes": 883120,
+      "asset_name": "extract__public__train.csv"
+    },
+    "extract/quality.json": {
+      "sha256": "dc96a5395474993eecabd9369e9a9c305a11b8dc83927cf54bd6ce9ce5e79907",
+      "bytes": 17863,
+      "asset_name": "extract__quality.json"
+    },
+    "get_dataset.py": {
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48",
+      "bytes": 3680,
+      "asset_name": "get_dataset.py"
+    },
+    "qualification.json": {
+      "sha256": "4cb5b34bf33fcdbff9bd6d4e4d74e190dc74ce75a4fb51b653a1a3689ba9e6ca",
+      "bytes": 17851,
+      "asset_name": "qualification.json"
+    },
+    "reproduction/LICENSE-CC0-1.0.txt": {
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "bytes": 7048,
+      "asset_name": "reproduction__LICENSE-CC0-1.0.txt"
+    },
+    "reproduction/LICENSE-MIT.txt": {
+      "sha256": "56b932ff064e5da113ae10175c8546325f64f26e1ece71683ffcbf8b2304fe1c",
+      "bytes": 1124,
+      "asset_name": "reproduction__LICENSE-MIT.txt"
+    },
+    "reproduction/artifact_scrub.py": {
+      "sha256": "8c663253e691a7b8751f9c853b40a3752a833360caafb1ea8e8f534e64af4b68",
+      "bytes": 11369,
+      "asset_name": "reproduction__artifact_scrub.py"
+    },
+    "reproduction/build.py": {
+      "sha256": "83c612c6325b71e358d962750c56737f824cf2ed3d8751148a5f369c8e5ec73e",
+      "bytes": 32631,
+      "asset_name": "reproduction__build.py"
+    },
+    "reproduction/construction.json": {
+      "sha256": "3b668f1e98c1c80ebeada1e2b055eb9c60a318c404b1e7e73149a60bc1370c78",
+      "bytes": 19338,
+      "asset_name": "reproduction__construction.json"
+    },
+    "reproduction/dataset_package.py": {
+      "sha256": "c2364defe58dcc99322be59a1bb04894ce00e823ce37afeb37bc31012f744327",
+      "bytes": 7927,
+      "asset_name": "reproduction__dataset_package.py"
+    },
+    "reproduction/dataset_run.py": {
+      "sha256": "8085fae14d6e93b852e692e18c1ef72113a3601f48f78901b6d1ae6db278de57",
+      "bytes": 12381,
+      "asset_name": "reproduction__dataset_run.py"
+    },
+    "reproduction/get_dataset.py": {
+      "sha256": "fad89222d50f9d9709225c34909be74c591df409c08b8b5951eba9d3cadfdd48",
+      "bytes": 3680,
+      "asset_name": "reproduction__get_dataset.py"
+    },
+    "reproduction/leakage_battery.py": {
+      "sha256": "adbf7ee0aca0012b78cc1f1e4aeb968a23717cae30f66a02e080215e75f830e3",
+      "bytes": 17379,
+      "asset_name": "reproduction__leakage_battery.py"
+    },
+    "reproduction/provenance.json": {
+      "sha256": "8880de985efd8e79e50bfe94346960358c3143b60c1ed423139fa2e3911da7bc",
+      "bytes": 573,
+      "asset_name": "reproduction__provenance.json"
+    },
+    "reproduction/qualify_dataset.py": {
+      "sha256": "bff6d43d0904182e2612c32bab702e41addbf389904a236c209e78be39e37a6b",
+      "bytes": 66067,
+      "asset_name": "reproduction__qualify_dataset.py"
+    },
+    "reproduction/recovery_recipes.py": {
+      "sha256": "f64c542fcda232169c95ace17421b45275194b934938c0ea4c9b68e6f844ad0e",
+      "bytes": 17609,
+      "asset_name": "reproduction__recovery_recipes.py"
+    },
+    "reproduction/requirements.txt": {
+      "sha256": "5c72f3268174d20364624f76680e189c408a05dba2e7b8cfe12d077b3865e7f0",
+      "bytes": 160,
+      "asset_name": "reproduction__requirements.txt"
+    },
+    "reproduction/source.json": {
+      "sha256": "037fd4fa903df1df7f940de84c6ff0597e79fbea87b268101243bfbfefebd001",
+      "bytes": 13983,
+      "asset_name": "reproduction__source.json"
+    },
+    "reproduction/source_io.py": {
+      "sha256": "0c60eed4968cd342148efbaac7e4fa98f00708d8e6c14c0929928687b9af1ea3",
+      "bytes": 5607,
+      "asset_name": "reproduction__source_io.py"
+    },
+    "reproduction/train.py": {
+      "sha256": "a3c6bcf13735bc85c52129ded68f839090dffdc266ebc3810dc61b2e6ea5e7e8",
+      "bytes": 2500,
+      "asset_name": "reproduction__train.py"
+    },
+    "reproduction/validate.py": {
+      "sha256": "b597e7f84fed614e64b4a86fbecbd6ec0145916a24d0d221a796586976418e7b",
+      "bytes": 1277,
+      "asset_name": "reproduction__validate.py"
+    },
+    "reproduction/validate.sh": {
+      "sha256": "3f06ca48f11c2e05d331b4d8394284925de660c1d4b086d2f8243959e83b7e6d",
+      "bytes": 482,
+      "asset_name": "reproduction__validate.sh"
+    },
+    "source-checks.json": {
+      "sha256": "d7a3d42b5c16becd3941e07df2df9a5c205402b6169b836e673f7a20981c3346",
+      "bytes": 8048,
+      "asset_name": "source-checks.json"
+    },
+    "source-snapshot.tar.gz": {
+      "sha256": "da86ed891a237481035da79d58d460db80d4503448990934dc63f8851dcd0105",
+      "bytes": 31316477,
+      "asset_name": "source-snapshot.tar.gz"
+    },
+    "verify_dataset.py": {
+      "sha256": "f4a4bb7f565cdbd075c520621f881876b491eaed91a5e6e70afb31e4753f9834",
+      "bytes": 1276,
+      "asset_name": "verify_dataset.py"
+    }
+  },
+  "source": {
+    "attribution": "No attribution statement is specified by the publisher on SBIR.gov or in the SBIR/STTR Policy Directive; suggested courtesy line: 'Data: U.S. Small Business Administration, SBIR.gov award database'",
+    "citation": "",
+    "documentation_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+    "license": "U.S. Government work - not subject to copyright in the United States under 17 U.S.C. \u00a7105(a); SBA publishes every award record as an open download with no licence agreement, registration or click-through",
+    "publisher": "U.S. Small Business Administration (SBIR.gov)",
+    "redistribution": true,
+    "terms_excerpt": "Every SBIR/STTR award since the program\u2019s inception is available for download.",
+    "terms_url": "https://www.sbir.gov/data-resources",
+    "urls": [
+      "https://data.www.sbir.gov/mod_awarddatapublic_no_abstract/award_data_no_abstract.csv"
+    ]
+  },
+  "task": {
+    "decision_user": "An SBIR programme analyst or the awardee firm's leadership, at the point the Phase I award is announced, deciding whether to plan, staff and budget a Phase II proposal.",
+    "features": [
+      {
+        "availability": "Stored on the index Phase I award record; used as a categorical feature.",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Two-to-four character code of the agency making the Phase I award",
+        "name": "agency"
+      },
+      {
+        "availability": "Stored on the index Phase I award record; may be blank for non-DoD awards",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Agency sub-component, mandatory for DoD awards and otherwise may be blank",
+        "name": "branch"
+      },
+      {
+        "availability": "Stored on the index Phase I award record; SBIR or STTR",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "SBIR or STTR",
+        "name": "program"
+      },
+      {
+        "availability": "Stored on the index Phase I award record; used as a feature and to derive award_date; current-vintage file may revise historical years",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Federal fiscal year of the index Phase I award; used as a feature and split key",
+        "name": "award_year"
+      },
+      {
+        "availability": "Stored as published; Phase I amount only; may be blank and is not imputed",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Dollar amount of the Phase I award only, never Phase II money",
+        "name": "award_amount"
+      },
+      {
+        "availability": "Stored on the index Phase I award record; may be blank",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Code or number of the solicitation topic or subtopic addressed by the Phase I award",
+        "name": "topic_code"
+      },
+      {
+        "availability": "Present on the index Phase I award record. The published file stores many values as full state names rather than two-letter codes; the builder canonicalizes both forms to USPS state and territory codes and preserves unrecognized non-US location text verbatim. Blank stays blank and is never imputed.",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Two-letter USPS state or territory code of the awardee address; full state names in the source are converted to the matching code",
+        "name": "state"
+      },
+      {
+        "availability": "Optional field on the index Phase I award record; may be blank; current-vintage values may be corrected",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Whole number of employees reported for the firm, 0-500",
+        "name": "number_employees"
+      },
+      {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Whether the firm is HUBZone-owned: Y, N, or U for unavailable",
+        "name": "hubzone_owned"
+      },
+      {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Whether the firm is at least 51 percent women-owned: Y, N, or U",
+        "name": "women_owned"
+      },
+      {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "evidence_url": "https://www.sbir.gov/data-resources/data-dictionary/award",
+        "meaning": "Whether the firm is socially and economically disadvantaged: Y, N, or U",
+        "name": "socially_economically_disadvantaged"
+      }
+    ],
+    "outcome_horizon": "Up to four federal fiscal years after the Phase I award year.",
+    "population": "Firms whose earliest award record in the frozen SBIR.gov no-abstract file is a Phase I award with award_year from 2005 through 2018 and a resolvable firm key: UEI, else DUNS, else normalized company name plus state. Firms with any earlier award record of either phase, or whose earliest record is Phase II, are excluded. Each firm contributes one row; same-year multiple Phase I records are included only when proposal_award_date identifies a unique earliest record.",
+    "prediction_time": "The Phase I award date: proposal_award_date when published and inside the federal fiscal year of award_year; otherwise the fiscal year end of award_year. Only fields on the index Phase I award record are read.",
+    "question": "Will a firm's first-ever SBIR/STTR Phase I award convert into a Phase II award from the same agency within four fiscal years?",
+    "simple_references": "Majority-class rate within each split; agency-by-award-year conversion base rate. Persistence is not available because each firm appears once and has no prior Phase I outcome to carry forward.",
+    "split_policy": "Chronological on Phase I award_year, fixed before any measurement: train 2005-2014, eval 2015-2016, holdout 2017-2018. No embargo is applied, because every feature is read from the Phase I record at its own award year and no label value is ever an input; the only timing rule is that each row's four-year window (ending at most 2022 for the 2018 cohort) must be closed inside the frozen file.",
+    "target": "1 if the same firm (matched on UEI, else DUNS, else normalised company name plus state) has any Phase II record from the same agency with award_year in {y+1, y+2, y+3, y+4}, where y is the Phase I award_year; 0 if no such record exists in the frozen file. Rows are dropped when no firm identifier can be resolved or when y+4 exceeds the last complete award year in the file.",
+    "usefulness": "No source column records Phase I to Phase II conversion, so the label must be rebuilt by linking a later Phase II award to the same firm and agency. Conversion is the SBIR stage gate, and raw Phase I and Phase II counts are confounded by firm survival and agency differences, so within-agency award-time attributes can add signal."
+  },
+  "rows": {
+    "train": 6574,
+    "eval": 1408,
+    "holdout": 1704
+  },
+  "evaluation_contract": {
+    "access": "isolated_rows",
+    "cross_row_audit": {
+      "auxiliary_files_review": "Only public/train.csv, public/eval.csv, and private/holdout.csv are written; no auxiliary evaluation files.",
+      "probes": [],
+      "rationale": "Each firm contributes one row keyed by a hashed stable identifier; no cross-row rate features are shipped."
+    },
+    "feature_evidence": {
+      "agency": {
+        "availability": "Stored on the index Phase I award record; used as a categorical feature.",
+        "source": "SBIR.gov award data dictionary, Agency field",
+        "status": "verified"
+      },
+      "award_amount": {
+        "availability": "Stored as published; Phase I amount only; may be blank and is not imputed",
+        "source": "SBIR.gov award data dictionary, Award Amount field",
+        "status": "verified"
+      },
+      "award_date": {
+        "availability": "Constructed from Proposal Award Date when it falls inside the award_year federal fiscal year; otherwise the fiscal year end is used. HHS awards do not publish Proposal Award Date, so exact HHS award dates are not observed.",
+        "source": "SBIR.gov award data dictionary, Proposal Award Date and Award Year fields",
+        "status": "assumed"
+      },
+      "award_year": {
+        "availability": "Stored on the index Phase I award record; used as a feature and to derive award_date; current-vintage file may revise historical years",
+        "source": "SBIR.gov award data dictionary, Award Year field",
+        "status": "verified"
+      },
+      "branch": {
+        "availability": "Stored on the index Phase I award record; may be blank for non-DoD awards",
+        "source": "SBIR.gov award data dictionary, Branch field",
+        "status": "verified"
+      },
+      "hubzone_owned": {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "source": "SBIR.gov award data dictionary, HUBZone Owned field",
+        "status": "verified"
+      },
+      "number_employees": {
+        "availability": "Optional field on the index Phase I award record; may be blank; current-vintage values may be corrected",
+        "source": "SBIR.gov award data dictionary, Number Employees field",
+        "status": "assumed"
+      },
+      "program": {
+        "availability": "Stored on the index Phase I award record; SBIR or STTR",
+        "source": "SBIR.gov award data dictionary, Program field",
+        "status": "verified"
+      },
+      "record_id": {
+        "availability": "Constructed after reading the index Phase I record; stable SHA1 prefix of the firm key",
+        "source": "Constructed at build time from the SBIR firm key; not a publisher field",
+        "status": "verified"
+      },
+      "socially_economically_disadvantaged": {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "source": "SBIR.gov award data dictionary, Socially and Economically Disadvantaged field",
+        "status": "verified"
+      },
+      "state": {
+        "availability": "Present on the index Phase I award record. The published file stores many values as full state names rather than two-letter codes; the builder canonicalizes both forms to USPS state and territory codes and preserves unrecognized non-US location text verbatim. Blank stays blank and is never imputed.",
+        "source": "SBIR.gov award data dictionary, State field, checked against observed source values in the no-abstract award CSV",
+        "status": "verified"
+      },
+      "topic_code": {
+        "availability": "Stored on the index Phase I award record; may be blank",
+        "source": "SBIR.gov award data dictionary, Topic Code field",
+        "status": "verified"
+      },
+      "women_owned": {
+        "availability": "Optional Y/N/U field on the index Phase I award record; U means unavailable",
+        "source": "SBIR.gov award data dictionary, Women Owned field",
+        "status": "verified"
+      }
+    },
+    "limitations": [
+      "Annual award records are a current-vintage administrative extract; later corrections can revise earlier years, so historical availability is not proven.",
+      "The shipped time column award_date uses Proposal Award Date when it falls inside the award_year federal fiscal year; HHS awards do not publish that date, so the fiscal year end is used. Those rows share a fiscal-year-end event cluster and exact HHS award dates are not observed.",
+      "The published state column mixes two-letter USPS codes with full state and territory names; the builder canonicalizes both to codes, so the state feature is a normalized location rather than a verbatim copy of the source field.",
+      "No parent key links a Phase II award to its Phase I award; conversion is inferred by firm key and agency within four award years, so some labels may be misassigned.",
+      "Firm identity uses UEI, else DUNS, else normalized company name plus state; optional identifiers and name changes can merge or split firms.",
+      "HHS awards may omit proposal_award_date; the index time is the federal award year, and award_date falls back to fiscal year end rather than an exact date.",
+      "Same-year multiple Phase I awards are included only when proposal dates identify a unique earliest record; otherwise the firm is excluded rather than given an arbitrary row.",
+      "Phase II records with missing agency or an unknown or missing phase in a label window are excluded, not treated as negative.",
+      "No label-derived group rates or persistence reference are shipped; each firm appears once.",
+      "The target is an award-record event, not the underlying cause of non-conversion; voluntary exit and temporary suspension are not separately observed."
+    ],
+    "selection": {
+      "evidence": "Only fields on the index Phase I award record are features; award_date is derived from Proposal Award Date or fiscal year end. The target links later Phase II records by firm key and agency.",
+      "kind": "prediction_time"
+    },
+    "training_label_timing": "unverified",
+    "use": "retrospective_research",
+    "vintage": {
+      "evidence": "The SBIR.gov no-abstract award CSV is a current-vintage administrative extract; later corrections can revise earlier award years and exact date fields.",
+      "kind": "current_snapshot"
+    }
+  },
+  "limitations": [
+    "SBIR.gov is agency-reported and uneven across agencies and years; award_amount and number_employees are as-published values that may have been corrected after the award, so this is a current-vintage retrospective extract and not a snapshot of what an analyst saw on the award date.",
+    "There is no parent key linking a Phase II to its Phase I, so conversion is inferred from firm identifier, agency and award-year window; a small share of labels will be misassigned, for example when a repeat awardee's later Phase II is credited to the wrong Phase I.",
+    "Firm identity depends on UEI, DUNS or name matching, and DUNS is an optional field in the dictionary, so some firms may be merged or split across identifiers.",
+    "HHS awards omit proposal_award_date by design ('Yes, Except HHS' in the dictionary), so the decision instant is a fiscal year rather than an exact date for NIH awardees.",
+    "17 U.S.C. \u00a7105(a) is territorial: it removes copyright within the United States only and does not establish public-domain status elsewhere; downstream reuse outside the US needs its own analysis.",
+    "Award titles and abstracts are company-authored text and are excluded from the release rather than relicensed.",
+    "Phase III commercialisation data sit in a government-only database under the Policy Directive, so the observable horizon stops at the Phase II stage gate.",
+    "Firms whose first Phase I award falls after 2018 are excluded because their four-year outcome window is not closed at the freeze.",
+    "Annual award records are a current-vintage administrative extract; later corrections can revise earlier years, so historical availability is not proven.",
+    "The shipped time column award_date uses Proposal Award Date when it falls inside the award_year federal fiscal year; HHS awards do not publish that date, so the fiscal year end is used. Those rows share a fiscal-year-end event cluster and exact HHS award dates are not observed.",
+    "The published state column mixes two-letter USPS codes with full state and territory names; the builder canonicalizes both to codes, so the state feature is a normalized location rather than a verbatim copy of the source field.",
+    "No parent key links a Phase II award to its Phase I award; conversion is inferred by firm key and agency within four award years, so some labels may be misassigned.",
+    "Firm identity uses UEI, else DUNS, else normalized company name plus state; optional identifiers and name changes can merge or split firms.",
+    "HHS awards may omit proposal_award_date; the index time is the federal award year, and award_date falls back to fiscal year end rather than an exact date.",
+    "Same-year multiple Phase I awards are included only when proposal dates identify a unique earliest record; otherwise the firm is excluded rather than given an arbitrary row.",
+    "Phase II records with missing agency or an unknown or missing phase in a label window are excluded, not treated as negative.",
+    "No label-derived group rates or persistence reference are shipped; each firm appears once.",
+    "The target is an award-record event, not the underlying cause of non-conversion; voluntary exit and temporary suspension are not separately observed.",
+    "No uncertainty interval; observed differences do not establish universal headroom"
+  ],
+  "qualification": {
+    "gate_version": "1.6.1",
+    "ok": true
+  }
+}
