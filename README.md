@@ -15,6 +15,14 @@ configs:
     path: extract/private/holdout.csv
 ---
 
+<!-- dataset-factory:links -->
+**Dataset Factory · v-0d2e623e604ecf78**
+
+[Dataset website](https://earino.github.io/factory-sbir-phase1-to-phase2-conversion/versions/v-0d2e623e604ecf78/) · [GitHub release](https://github.com/earino/factory-sbir-phase1-to-phase2-conversion/releases/tag/v-0d2e623e604ecf78) · [Hugging Face](https://huggingface.co/datasets/earino/factory-sbir-phase1-to-phase2-conversion/tree/v-0d2e623e604ecf78) · [Catalogue](https://earino.github.io/dataset-factory-site/)
+
+Artifact: a1f22706a52ba521dcb070d0a85877c552f5c62e8752af292e4a31ec27fdbe72
+<!-- /dataset-factory:links -->
+
 # Stage-gate conversion of first-time SBIR/STTR Phase I awards to Phase II: will a new awardee firm advance within four years?
 
 Will a firm's first-ever SBIR/STTR Phase I award convert into a Phase II award from the same agency within four fiscal years?
